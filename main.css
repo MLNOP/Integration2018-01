@@ -1,0 +1,215 @@
+/*CSS RESET*/
+/*--------------------------*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*--------------------------*/
+@media only screen and (min-width: 920px){
+
+    body{
+        padding: 0 5%
+    }
+    .region-top{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .article-right{
+        flex-shrink: 2;
+    }
+    .bottomContainer{
+        display: flex;
+    }
+    .region-main{
+        display: flex;
+        flex-direction: column;
+    }
+    .region-form{
+        flex-shrink: 2;
+        width: 84%;
+    }
+    .region-main article{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+}
+html, *{
+    box-sizing: border-box;
+    width: 100%;
+}
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: #e0e0e0;
+    color: #424242;
+    font-family: 'RobotoDraft', 'Helvetica Neue', Helvetica, Arial;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/*Header*/
+/*--------------------------*/
+.header{
+    background: url("https://lenergeek.com/wp-content/uploads/2017/07/5Qwant_inline-min.jpg") no-repeat white;
+    background-size: contain;
+}
+.header nav{
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.header nav a{
+    padding: 1%;
+    color: #37474f;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 2.5;
+    width: 25%;
+    text-align: center;
+}
+.header nav a:hover {
+    background: #37474f;
+    color: #fff;
+  }
+
+/*Region Top*/
+/*--------------------------*/
+.article-left{
+    display: flex;
+    background: url("https://think.storage.googleapis.com/images/mm-guide-be-there-hp-hero.jpg") no-repeat salmon;
+    background-size: cover;
+    background-position: center;
+}
+.article-11{
+    background-color: #ff7043;
+    padding: 4%;
+    margin: 30% 30% 5%  5% ;
+}
+.article-11 a{
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: larger;
+}
+.article-11 p{
+    color: white;
+}
+.article-right article div{
+    padding: 0 3% 0 3%;
+}
+.article-right article a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.tags a{
+    color: #37474f;
+    font-size: 75%;
+    text-decoration: none;
+    font-weight: bold;
+}
+.article-right article:nth-child(1) {
+    background-color: #c62828;
+}
+.article-right article:nth-child(2) {
+    background-color: #5c6bc0;
+}
+
+/*Region Main*/
+/*--------------------------*/
+.region-main article div{
+    padding: 0 3% 0 3%;
+}
+.region-main article div h1{
+    font-weight: bold;
+    font-size: 100%;
+}
+
+/*Formulaire de contact*/
+/*--------------------------*/
+.region-form {
+    display: flex;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    color: #666;
+    padding: 4%;
+  }
+
+.region-form h1 {
+    font-size: larger;
+    font-weight: bold;
+  }
+
+.region-form label {
+    display: inline-block;
+    width: 100px;
+  }
+
+.region-form input[type=submit] {
+    background-color: #5677fc;
+    border-radius: 2px;
+    font-weight: 500;
+    padding: .45em .938em .5em;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    color: white;
+    margin: 1em auto 0 auto;
+    display: block;
+    font-size: 0.9em;
+  }
+
+/*Footer*/
+/*--------------------------*/
+.region-footer {
+    clear: both;
+    background-color: black;
+  }
+  
