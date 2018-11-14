@@ -49,11 +49,12 @@ table {
 	border-spacing: 0;
 }
 /*--------------------------*/
-@media only screen and (min-width: 920px){
-
+@media only screen and (min-width: 1280px){
     body{
         padding: 0 5%
     }
+}
+@media only screen and (min-width: 920px){
     .region-top{
         display: flex;
         flex-direction: row;
